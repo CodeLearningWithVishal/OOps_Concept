@@ -2,7 +2,7 @@
 using Polymorphism.Dynamic_RunTime_Polymorphism;
 using Polymorphism.Static_CompileTime_Polymophism;
 
-Console.WriteLine("Compile time polymorphism Started");
+Console.WriteLine("1. Compile time polymorphism Started");
 
 TestData dataClass = new TestData();
 int add2 = dataClass.Add(45, 34, 67);
@@ -13,7 +13,7 @@ Console.WriteLine("add2 Output: " + add2.ToString());
 
 Console.WriteLine("Compile time polymorphism End");
 
-Console.WriteLine("Runtime polymorphism Started");
+Console.WriteLine("2. Runtime polymorphism Started");
 
 Drawing circle = new Circle();
 Console.WriteLine("Area :" + circle.Area());
@@ -25,3 +25,5 @@ Drawing rectangle = new Rectangle();
 Console.WriteLine("Area :" + rectangle.Area());
 
 Console.WriteLine("Runtime polymorphism End");
+
+Console.ReadLine();
